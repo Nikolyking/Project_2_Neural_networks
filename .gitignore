@@ -1,0 +1,11 @@
+# Ignore pdf files
+.pdf
+
+# Ignore IDE specific files
+.vscode/
+
+# Ignore compiled files
+*.exe
+
+# Ignore environment variable files
+.env
