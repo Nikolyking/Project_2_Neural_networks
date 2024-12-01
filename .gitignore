@@ -9,3 +9,6 @@
 
 # Ignore environment variable files
 .env
+
+# Ignore documenation files
+Documenation/
