@@ -37,11 +37,10 @@ namespace BasicDenseLinearAlgebra
  public:
 
   /// Constructor: Pass size (n rows, m columns)
-  DoubleMatrix(const unsigned& n, const unsigned& m) : N(n), M(m)
-   {
-    // Flat packed storage: a(i,j) = a_flat_packed(i*M+j) (row by row)
-    Matrix_storage.resize(N*M,0.0);
-   }
+  DoubleMatrix() : N(0), M(0) {} // Default constructor
+  DoubleMatrix(const unsigned& n, const unsigned& m) : N(n), M(m) {
+    Matrix_storage.resize(N * M, 0.0);
+  }
   
   /// Number of rows
   unsigned n() const
